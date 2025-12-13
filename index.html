@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensionador de Cabos Elétricos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;500&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 30px;
+            filter: drop-shadow(0 0 15px #ff0000);
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 28px;
+            color: #ffd700; /* Dourado */
+            text-shadow: 0 0 10px #ff0000;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #ffffff;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        .highlight {
+            color: #ff0000; /* Vermelho */
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff0000, #cc0000);
+            color: #ffd700;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
+        }
+
+        .footer {
+            font-size: 14px;
+            color: #888;
+            margin-top: 40px;
+        }
+
+        .icon {
+            font-size: 40px;
+            color: #ffd700;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { text-shadow: 0 0 10px #ffd700; }
+            50% { text-shadow: 0 0 30px #ff0000; }
+            100% { text-shadow: 0 0 10px #ffd700; }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Você pode trocar o src por um logo seu (ícone de cabo elétrico ou raio) -->
+        <img src="https://img.icons8.com/color/96/000000/electricity.png" alt="Eletricidade" class="logo">
+
+        <h1>Dimensionador de Cabos Elétricos</h1>
+        
+        <p>
+            Ferramenta profissional para <span class="highlight">cálculos precisos</span> de dimensionamento de cabos em instalações elétricas.
+        </p>
+
+        <div class="icon">
+            <i class="fas fa-bolt"></i>
+        </div>
+
+        <a href="https://dimensionador-cabos-sampaio-controlline.streamlit.app/" class="btn" target="_blank">
+            <i class="fas fa-calculator"></i> Acessar a Ferramenta
+        </a>
+
+        <p>
+            Desenvolvido por <span style="color:#ffd700; font-weight:bold;">Sampaio - Controlline</span><br>
+            Engenharia Elétrica de Alta Performance
+        </p>
+
+        <div class="footer">
+            © 2025 - Todos os direitos reservados
+        </div>
+    </div>
+</body>
+</html>
